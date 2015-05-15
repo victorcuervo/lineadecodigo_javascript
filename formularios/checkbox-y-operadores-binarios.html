@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Checkbox y operadores binarios</title>
+<script>
+ // Definimos el array con los datos 
+ // Podemos modificar añadiendo o eliminando opciones 
+ datos = ['Futbol','Baloncesto','Atletismo','Balonmano','Gimnasia','Karate'];
+
+ // Variable que guarda el valor que se almacenara
+ // en la Base de Datos
+ var checkboxActivados = 0;
+
+ function activarValor (numero) {
+  checkboxActivados ^= numero;
+ }
+
+ function potencia ( exponente ) {
+  
+  // Retorna dos elevando al exponente recibido como parametro
+  calculo = 1;
+  for (x=0;x<exponente;x++) {
+    calculo = calculo*2;
+  }
+  return calculo;
+ }
+
+ function listarActivos() {
+
+  // Lista los checkbox que hay activados atendiendo a la
+  // variable activado.
+  lista = "Opciones activadas \n";
+
+  for (x=0; x<datos.length; x++) {
+   activado = checkboxActivados & potencia(x);
+   if (activado != 0) {
+     lista = lista + " ·" +    datos[x] + "\n";
+   }
+  }
+  alert(lista);
+ }
+
+ function escribirOpciones () {
+
+   // Función que crea los checkbox a partir del array
+  for (x=0; x<datos.length; x++) {
+   document.write("<input type='checkbox' onClick='activarValor(" 
+     + potencia(x) + ");'>" + datos[x] + "<br>");
+  }
+ }
+</script>
+</head>
+<body>
+<h1>Checkbox y Operadores Binarios</h1>
+
+<form name="form2">
+<p> 
+<script>escribirOpciones();</script>
+<input type="button" name="Button1" value="Valor a la Base de Datos"
+  onClick="alert(checkboxActivados);">
+<input type="button" name="Button2" value="CheckBox seleccionados"
+  onClick="listarActivos();">
+</p>
+</form>
+
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/03/29/checkbox-y-operadores-dinamicos/">http://lineadecodigo.com/2008/03/29/checkbox-y-operadores-dinamicos/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

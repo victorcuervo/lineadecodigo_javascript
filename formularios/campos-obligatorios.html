@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Campos Obligatorios</title>
+
+<script type="text/javascript">
+function validar(){
+
+
+	// Validamos los campos de input text
+	camposTexto = document.getElementById("formulario").elements; 
+
+	for (x=0; x < camposTexto.length; x++) {
+		if (camposTexto[x].value == '' && camposTexto[x].type=='text'){
+			alert("El campo " + camposTexto[x].id + " está vacio y es OBLIGATORIO");
+			return false;
+    	}    
+   }
+   
+   // Validamos si hay alguna opción marcada
+   camposCheck = document.getElementsByName("deporte");   
+   opcion = false;
+   x = 0;
+   
+   while (x<camposCheck.length && !opcion) {
+   		if (camposCheck[x].checked){
+   			opcion = true;
+   		}
+   		x++;
+   	}
+   	
+   	if (!opcion)
+   		alert("Tienes que seleccionar alguna opción");   
+
+
+}
+</script>
+
+</head>
+<body>
+<h1>Campos Obligatorios</h1>
+
+
+Rellene sus datos personales y al menos alguna de las opciones sobre su deporte favorito:
+
+<form id="formulario">
+<label for="nombre">Nombre:</label> <input type="text" id="nombre"/><br>
+<label for="email">E-Mail:</label> <input type="text" id="email"/><br>
+
+Deporte favorito:
+<input type="checkbox" name="deporte" id="futbol" value="futbol"/><label for="futbol">Futbol</label> 
+<input type="checkbox" name="deporte" id="baloncesto" value="baloncesto"/><label for="baloncesto">Baloncesto</label> 
+<input type="checkbox" name="deporte" id="atletismo" value="atletismo"/><label for="atletismo">Atletismo</label><br>
+
+<button onClick="validar();">Validar</button>
+
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/04/17/campos-obligatorios-en-javascript/">http://lineadecodigo.com/2008/04/17/campos-obligatorios-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

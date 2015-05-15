@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>API QuerySelector</title>
+</head>
+<body>
+<h1>API QuerySelector</h1>
+
+
+<div id="mensaje">Esto es un mensaje</div>
+
+
+<script>
+
+	// Validamos si el API QuerySelector está soportado
+	if (document.querySelector)
+		document.write ("API Query Selector soportado");
+	else
+		document.write ("API Query Selector NO soportado");
+	
+	var mensaje = document.querySelector("#mensaje")
+	console.log(mensaje);
+	console.log("El contenido de los elementos de la clase mensaje '" + mensaje.innerHTML + "'");
+	
+
+</script>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/api-queryselector/">http://lineadecodigo.com/javascript/api-queryselector/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

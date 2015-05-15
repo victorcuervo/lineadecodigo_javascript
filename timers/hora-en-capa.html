@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Reloj en una capa</title>
+<style type="text/css">
+	#capa_reloj {font:bold; color:yellow; background:blue; width:70px;}
+</style>
+<script type="text/javascript">
+function mostrar() {
+
+	var dia = new Date();
+	var hora = dia.getHours();
+	var minutos = dia.getMinutes();
+	var segundos = dia.getSeconds();
+   
+	if ((hora >= 0)&&(hora <= 9)){
+		hora="0"+hora;
+	}
+   
+	if ((minutos >= 0)&&(minutos <= 9)){
+		minutos="0"+minutos;
+	}
+   
+	if ((segundos >= 0)&&(segundos <= 9)){
+		segundos="0"+segundos;
+	}
+   
+  time =" " + hora + ":" + minutos + ":" + segundos;
+  document.getElementById("capa_reloj").innerHTML = time;
+   
+  window.setTimeout("mostrar()",1000);
+}
+</script>
+
+
+</head>
+<body onLoad="window.setTimeout('mostrar()',1000);">
+<h1>Reloj en una capa</h1>
+<div id="capa_reloj"></div>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/reloj-javascript-en-una-capa/">http://lineadecodigo.com/javascript/reloj-javascript-en-una-capa/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

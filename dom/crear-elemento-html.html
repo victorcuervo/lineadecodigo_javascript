@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Crear elemento HTML</title>
+
+<script type="text/javascript">
+
+function addElement(texto){
+
+	var capa = document.getElementById("capa");
+	var h1 = document.createElement("h1");
+	h1.innerHTML = texto;
+	capa.appendChild(h1);
+
+}
+
+</script>
+</head>
+<body>
+
+
+<div id="capa">
+</div>
+
+
+<form>
+<label for=texto">Texto:</label><input id="texto" type="text" size=40/>
+<input type="button" onClick="addElement(getElementById('texto').value);" value="Añadir Elemento"/>
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/09/09/crear-elementos-html-con-javascript/">http://lineadecodigo.com/2007/09/09/crear-elementos-html-con-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

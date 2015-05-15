@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Abrir y cerrar ventana</title>
+<script>
+var ventana;
+function crearVentana() {
+     ventana = window.open("http://www.manualweb.net","nuevo","width=400,height=400");
+     setTimeout(cerrarVentana,5000);
+}
+
+function cerrarVentana(){
+     ventana.close();
+}
+</script>
+</head>
+<body>
+
+<h1>Abrir y cerrar ventana</h1>
+
+<a href="#" onClick="crearVentana();">Abrir ventana</a> (a los 5 segundos se cerrara)
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/03/23/abrir-y-cerrar-una-ventana/">http://lineadecodigo.com/2008/03/23/abrir-y-cerrar-una-ventana/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Replace - 2</title>
+</head>
+<body>
+<h1>Función Replace con JavaScript</h1>
+
+<script type="text/javascript">
+
+  var frase = "Son tres mil trescientos treinta y tres con nueve";
+ 
+  // Sustitución normal
+  frase2 = frase.replace("tres","dos");
+  alert(frase2);
+
+  // Sustitución con expresiones regulares. Cambiamos todas las vocales a 'e'.
+  frase3 = frase.replace(/[aiou]/gi,'e');
+  alert(frase3); 
+  
+  // Sustitución de todas las coincidencias
+  frase4 = frase.replace(/tres/gi,'dos');
+  alert(frase4); 
+   
+</script>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/08/07/funcion-replace-en-javascript/">http://lineadecodigo.com/2007/08/07/funcion-replace-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

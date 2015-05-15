@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Modificar el enlace</title>
+<script type="text/javascript">
+
+function modificar(url,texto,destino){
+
+  document.getElementById("mienlace").innerHTML = texto;
+  document.getElementById("mienlace").href = url;
+  document.getElementById("mienlace").target = destino;
+
+}  
+
+</script>
+
+
+</head>
+<body>
+
+<h1>Modificar el enlace</h1>
+
+<h2>Enlace</h2>
+<a href="http://www.google.com" target="_blank" title="Google" id="mienlace">Google</a>
+
+<h2>Modificar el enlace</h2>
+<form action="#">
+ <label for="enlace">URL: </label><input type="text" id="enlace"><br>
+ <label for="texto">Texto: </label><input type="text" id="texto"><br>
+ <label for="destino">Target: </label>
+ <select id="destino">
+   <option value="_blank">Nueva Ventana</option>
+   <option value="_self">Misma ventana</option>
+   <option value="_parent">Ventana Padre</option>
+   <option value="_top">Top</option>   
+ </select><br>
+ <button onClick="modificar(getElementById('enlace').value,getElementById('texto').value,getElementById('destino').value);">Cambiar enlace</button>
+</form>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/02/29/modificar-los-enlaces-con-javascript/">http://lineadecodigo.com/2008/02/29/modificar-los-enlaces-con-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Marcar valor de un combo dinámicamente</title>
+
+<script type="text/javascript">
+function marcar(opcion) {
+
+	document.getElementById('favoritos').options[opcion].selected=true;
+
+}
+</script>
+
+</head>
+<body>
+
+<h1>Marcar valor de un combo dinámicamente</h1>
+
+<label for="favoritos">Marca de las siguientes opciones, cuales son tus favoritas:</label><br/>
+
+<select multiple="multiple" id="favoritos" name="favoritos" size=6>
+	<option value="deportes">Deportes</option>
+	<option value="cine">Cine</option>
+	<option value="teatro">Teatro</option>
+	<option value="fotografía">Fotografía</option>
+	<option value="lectura">Lectura</option>
+	<option value="viajes">Viajes</option>
+	<option value="pintura">Pintura</option>
+	<option value="música">Música</option>
+	<option value="otros">Otros</option>	
+</select><br/><br/>
+
+<button onclick="marcar(1);return false;">Marcar Cine</button>
+<button onclick="marcar(3);return false;">Marcar Fotografía</button>
+<button onclick="marcar(5);return false;">Marcar Viajes</button>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/activar-valores-de-un-combo-dinamicamente/">http://lineadecodigo.com/javascript/activar-valores-de-un-combo-dinamicamente/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

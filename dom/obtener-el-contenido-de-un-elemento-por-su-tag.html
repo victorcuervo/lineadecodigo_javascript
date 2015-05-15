@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Obtener el contenido de un elemento por su tag</title>
+
+<script type="text/javascript">
+
+function listarEnlaces(){
+
+	// Si no defines enlaces como var, no funciona
+	var enlaces = document.getElementsByTagName("A");
+	
+	document.write("El numero de enlaces encontrados es: " + enlaces.length + "<br>");
+	
+	for (x=0;x<enlaces.length;x++)
+		document.write(enlaces[x].name + ": " + enlaces[x].href + "<br>");
+}
+
+</script>
+
+</head>
+<body>
+
+<h1>Obtener el contenido de un elemento por su tag</h1>
+<ul id="enlaces">
+<li><a href="http://lineadecodigo.com" name="Linea de Codigo">Linea de Codigo</a></li>
+<li><a href="http://www.google.com" name="Google">Google</a></li>
+<li><a href="http://www.manualweb.net" name="Manual Web">Manual Web</a></li>
+</ul>
+
+<script type="text/javascript">
+	listarEnlaces();
+</script>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/08/17/obtener-el-contenido-de-un-elemento-conociendo-su-tag/">http://lineadecodigo.com/2007/08/17/obtener-el-contenido-de-un-elemento-conociendo-su-tag/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

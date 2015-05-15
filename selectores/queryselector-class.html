@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Acceder a una Clase con API QuerySelector</title>
+</head>
+<body>
+<h1>Acceder a una Clase con API QuerySelector</h1>
+
+
+
+<ul>
+	<li class="item">Item 1</li>
+	<li class="item">Item 2</li>
+	<li class="item">Item 3</li>
+	<li class="item">Item 4</li>
+	<li class="item">Item 5</li>
+</ul>
+
+
+<script>
+	
+	var elemento = document.querySelector(".item");
+	console.log(elemento);
+	console.log(elemento.innerHTML);
+	
+	var elementos = document.querySelectorAll(".item");
+	for (x=0;x<elementos.length;x++) {
+		console.log(elementos[x].innerHTML);
+	}
+
+</script>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/acceder-una-clase-con-queryselector/">http://lineadecodigo.com/javascript/acceder-una-clase-con-queryselector/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

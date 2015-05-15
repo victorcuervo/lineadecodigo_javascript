@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Eliminar elementos de una página</title>
+<script type="text/javascript">
+
+function eliminarElemento(id){
+
+	imagen = document.getElementById(id);
+	
+	if (!imagen){
+		alert("El elemento selecionado no existe");
+	} else {
+		padre = imagen.parentNode;
+		padre.removeChild(imagen);
+	}
+
+}
+
+</script>
+</head>
+<body>
+
+<h1>Eliminar elementos de una página</h1>
+
+<div id="imagenes">
+<img src="http://lineadecodigo.com/wp-content/uploads/2006/12/firefox.jpg" id="firefox"/>
+<img src="http://lineadecodigo.com/wp-content/uploads/2007/01/bea.gif" id="bea"/>
+<img src="http://lineadecodigo.com/wp-content/uploads/2006/12/java.jpg" id="java"/>
+<img src="http://lineadecodigo.com/wp-content/uploads/2006/12/opera.jpg" id="opera"/>
+<img src="http://lineadecodigo.com/wp-content/uploads/2006/12/eclipse.jpg" id="eclipse"/>
+</div>
+
+<form action="">
+<label for="elemento">Nombre del logo:</label><input type="text" id="elemento">
+<input type="button" onClick="eliminarElemento(document.getElementById('elemento').value);" value="Eliminar Elemento"/>
+</form>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/09/26/eliminar-elementos-de-una-pagina-con-javascript/">http://lineadecodigo.com/2007/09/26/eliminar-elementos-de-una-pagina-con-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

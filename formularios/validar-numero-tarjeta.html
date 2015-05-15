@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Validar numero de tarjeta</title>
+
+<script type="text/javascript">
+function validarTarjetas(){
+  
+  
+  visa = document.getElementById("visa").value;
+  mastercard = document.getElementById("mastercard").value;
+     
+  visa_error = "";
+  mastercard_error = "";     
+     
+  if (!visa.match(/^4\d{3}-?\d{4}-?\d{4}-?\d{4}$/))
+    visa_error = "No es un número de Visa correcto";
+  
+  
+  if (!mastercard.match(/^5[1-5]\d{2}-?\d{4}-?\d{4}-?\d{4}$/))
+  	mastercard_error = "No es un número de Mastercard correcto";
+  
+  document.getElementById("visa_error").innerHTML = visa_error;
+  document.getElementById("mastercard_error").innerHTML = mastercard_error;
+   
+  
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Validar Numero de tarjeta</h1>
+
+
+<form action="#">
+<label for="visa">VISA: </label><input type="text" id="visa" size="20" value="4552-7204-1234-5678"/> <span id="visa_error" style="color: #f00;"></span><br>
+<label for="mastercard">MasterCard: </label><input type="text" id="mastercard" size="20" value="5588-3201-2345-6789"/> <span id="mastercard_error" style="color: #f00;"></span><br>
+Utilizar guiones para separar los numeros. No se permiten espacios.<br>
+<input type="button" onClick="validarTarjetas();" value="Validar Tarjetas">
+</form>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/03/07/validar-numeros-de-tarjetas-de-credito-con-javascript/">http://lineadecodigo.com/2008/03/07/validar-numeros-de-tarjetas-de-credito-con-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+</body>
+</html>

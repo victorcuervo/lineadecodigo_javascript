@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Contar caracteres on-line</title>
+
+<script type="text/javascript"> 
+function WordCountOnLine() {
+
+  // Función que nos va a contar el número de caracteres 
+  // y de palabras del area de texto de un formulario
+  // Obtenemos el texto del area.
+  textoArea = document.getElementById("area_texto").value;
+
+  // El numero de caracteres es su longitud
+  numeroCaracteres = textoArea.length;
+
+  // Eliminamos los caracteres en blanco del inicio y del final.
+  // Como no tenemos funciones del tipo trim, rtrim y ltrim usamos
+  // expresiones regulares
+  inicioBlanco = /^ / // El ^ indica principio de cadena
+  finBlanco = / $/ // El $ indica final de cadena
+
+
+  // El global (g) es para obtener todas las posibles combinaciones
+  variosBlancos = /[ ]+/g 
+  textoArea = textoArea.replace(inicioBlanco,"");
+  textoArea = textoArea.replace(finBlanco,"");
+  textoArea = textoArea.replace(variosBlancos," ");
+
+  // Creamos un array con las diferentes palabras.
+  // Teniendo en cuenta que la separación
+  // entre palabras es el espacio en blanco.
+  textoAreaDividido = textoArea.split(" ");
+  numeroPalabras = textoAreaDividido.length;
+  
+  document.getElementById("caracteres").value = numeroCaracteres; 
+  document.getElementById("palabras").value = numeroPalabras;
+  setTimeout("WordCountOnLine();",300);
+}
+</script>
+</head>
+<body onLoad="WordCountOnLine();">
+
+<h1>Contar caracteres on-line</h1>
+
+<form name="formulario">
+<label for="area_texto">Empiece a escribir...</label><br>
+<textarea id="area_texto" style="font-family:verdana;font-size:12px;" rows=10 cols=50></textarea><br>
+<label for="caracteres">Número de caracteres:</label> 
+<input id="caracteres" style="font-family:verdana;font-size:12px;" type="text" size=4 value="0">
+<label for="palabras">Número de palabras:</label> 
+<input id="palabras" style="font-family:verdana;font-size:12px;" type="text" size=4 value="0">
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/03/25/contar-caracteres-on-line/">http://lineadecodigo.com/2008/03/25/contar-caracteres-on-line/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

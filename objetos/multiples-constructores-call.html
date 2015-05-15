@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Multiples Constructores con Call()</title>
+</head>
+<body>
+
+<h1>Multiples Constructores con Call()</h1>
+
+
+<script type="text/javascript">
+
+function persona(nombre,apellido,edad,direccion,cp,ciudad){
+	datosbasicos.call(this,nombre,apellido,edad);
+	domicilio.call(this,direccion,cp,ciudad);
+}
+
+function datosbasicos(nombre,apellido,edad) {
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.edad = edad;	
+}
+
+function domicilio(direccion,cp,ciudad){
+	this.direccion = direccion;
+	this.cp = cp;
+	this.ciudad = ciudad;	
+}
+
+var p1 = new persona("victor","cuervo","33","calle del pez,3","28001","Madrid");
+
+document.write("Mi código postal es " + p1.cp);
+		
+
+</script>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/creando-clases-en-javascript-con-call/">http://lineadecodigo.com/javascript/creando-clases-en-javascript-con-call/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

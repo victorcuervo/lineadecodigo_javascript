@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Convertir segundos a formato hora en Javascript</title>
+</head>
+<body>
+<h1>Convertir segundos a formato hora en Javascript</h1>
+<script>
+
+segundos = 61;
+//segundos = 82800; 23h
+//segundos = 86400; 24h
+
+var d=new Date(segundos*1000); 
+
+// Ajuste de las 23 horas
+var hora = (d.getHours()==0)?23:d.getHours()-1;
+var hora = (hora<9)?"0"+hora:hora;
+var minuto = (d.getMinutes()<9)?"0"+d.getMinutes():d.getMinutes();
+var segundo = (d.getSeconds()<9)?"0"+d.getSeconds():d.getSeconds();
+
+document.write(hora+":"+minuto+":"+segundo);
+</script>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/convertir-segundos-en-formato-hora-con-javascript/">http://lineadecodigo.com/javascript/convertir-segundos-en-formato-hora-con-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

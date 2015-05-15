@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Cambiar estilos online</title>
+
+<style type="text/css">
+ .e1 {background:red;font-family:times;}
+ .e2 {background:blue; font-family:arial;}
+ .e3 {background:pink; heigth=250px;}
+</style>
+
+<script type="text/javascript">
+ function cambiarHojaEstilos (id,estilo) {
+   document.getElementById(id).className=estilo;   
+ }
+</script>
+
+</head>
+<body>
+<h1>Cambiar estilos online</h1>
+
+<form>
+  <button class="e2" id="b1" onClick="cambiarHojaEstilos('b1','e1');return false;">Prueba de Cambios</button>
+  <button class="e2" id="b2" onClick="cambiarHojaEstilos('b2','e3');return false;">Prueba de Cambios 2</button>
+</form>
+  
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/cambiar-estilos-dinamicamente/">http://lineadecodigo.com/javascript/cambiar-estilos-dinamicamente/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

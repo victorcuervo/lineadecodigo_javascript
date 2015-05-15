@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Replace</title>
+<script type="text/javascript">
+
+function replace(texto,s1,s2){
+	return texto.split(s1).join(s2);
+} 
+
+function cambiartexto(area,s1,s2){
+	// Obtenemos el valor del area de texto	
+	texto = area.value;
+	// Cambiamos su valor
+	area.value = replace(texto,s1,s2);
+}
+
+
+</script>
+
+</head>
+<body>
+
+<h1>Replace</h1>
+
+<form id="formulario">
+<textarea rows="10" cols="50" id="texto">En un lugar de la mancha de cuyo nombre no quiero acordarme...</textarea>
+<br>
+Cadena 1: <input type="text" id="cadena1" size="50"/><br>
+Cadena 2: <input type="text" id="cadena2" size="50"/>
+<input type="button" value="Remplazar" onClick="cambiartexto(document.getElementById('texto'),document.getElementById('cadena1').value,document.getElementById('cadena2').value);"/>
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/08/07/funcion-replace-en-javascript/">http://lineadecodigo.com/2007/08/07/funcion-replace-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

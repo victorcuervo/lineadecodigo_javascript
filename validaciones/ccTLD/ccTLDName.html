@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Extensiones de email. ccTLD</title>
+
+<script type="text/javascript" src="ccTLD.js"></script>
+<script type="text/javascript">
+
+function getCountry(email) {
+	
+  var encontrado = false;
+  var cont = 0;
+  var ext = email.substr(email.length-3,3);
+  
+  while ((!encontrado) && (cont<extensions.length)) {
+     if (extensions[cont][0] == ext)
+       encontrado = true; 
+     else 
+       cont++;
+  }
+
+  if (encontrado) {
+     alert("El e-mail " + email + "corresponde a " + extensions[cont][1]);
+   } else {
+     alert("El e-mail introducido no se corresponde a ningun país");
+   }
+}
+</script>
+</head>
+<body>
+
+<h1>Extensiones de email. ccTLD</h1>
+<form>
+<label for="email">E-mail:</label><input type="text" id="email" size="50">
+<button onClick="getCountry(document.getElementById('email').value);">¿Cual es el país del email?</button>
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2009/01/10/extensiones-de-email-cctld/">http://lineadecodigo.com/2009/01/10/extensiones-de-email-cctld/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

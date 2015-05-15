@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Contar Checkbox Activos</title>
+<script type="text/javascript">
+ function contar() {
+  var checkboxes = document.getElementById("form1").checkbox; //Array que contiene los checkbox
+
+  var cont = 0; //Variable que lleva la cuenta de los checkbox pulsados
+
+  for (var x=0; x < checkboxes.length; x++) {
+   if (checkboxes[x].checked) {
+    cont = cont + 1;
+   }
+  }
+ 
+  alert ("El número de checkbox pulsados es " + cont);
+ }
+</script>
+</head>
+<body>
+
+<h1>Contar Checkbox Activos</h1>
+
+<form id="form1" method="post" action="#">
+<input type="checkbox" name="checkbox" id="chk1"><label for="chk1">CheckBox 1</label><br>
+<input type="checkbox" name="checkbox" id="chk2"><label for="chk2">CheckBox 2</label><br>
+<input type="checkbox" name="checkbox" id="chk3"><label for="chk3">CheckBox 3</label><br>
+<input type="checkbox" name="checkbox" id="chk4"><label for="chk4">CheckBox 4</label><br>
+<input type="checkbox" name="checkbox" id="chk5"><label for="chk5">CheckBox 5</label><br>
+<input type="checkbox" name="checkbox" id="chk6"><label for="chk6">CheckBox 6</label><br>
+<input type="checkbox" name="checkbox" id="chk7"><label for="chk7">CheckBox 7</label><br>
+<input type="checkbox" name="checkbox" id="chk8"><label for="chk8">CheckBox 8</label><br>
+<input type="checkbox" name="checkbox" id="chk9"><label for="chk9">CheckBox 9</label><br>
+<input type="checkbox" name="checkbox" id="chk10"><label for="chk10">CheckBox 10</label><br>
+
+<input type="button" name="Submit" value="Contar" onClick="contar();">
+<br>
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/02/08/contar-checkbox-activos-con-javascript/">http://lineadecodigo.com/2008/02/08/contar-checkbox-activos-con-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

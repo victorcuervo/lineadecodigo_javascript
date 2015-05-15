@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Programación orientada a objetos con javascript</title>
+<script type="text/javascript" language="javascript">
+
+console.log("creo el constructor");
+//creo el "constructor" de la clase
+function Economica(valor,tasa,periodo){
+  this.valor=valor;
+  this.tasa=tasa;
+  this.periodo=periodo; 
+  this.desplegarResultado=desplegarResultado;// este es un método que nos mostrará el resultado de la operación
+}
+
+function ver(string){
+  alert(string);
+}
+
+
+//creo el método para obtener el resultado de la operación
+function desplegarResultado(){
+   var valorFuturo=parseFloat(this.valor)*Math.pow(1+parseFloat(this.tasa)/100,parseInt(this.periodo));
+   console.log("valor futuro: "+valorFuturo);
+   var result="\n..valor: "+this.valor+"   \n..tasa: "+this.tasa+"  \n..periodo: "+this.periodo;
+   result+="  \nresultado: "+valorFuturo.toString();
+   // se invoca al método "ver"
+   ver(result);
+}
+
+//método principal, solicita los datos al usuario
+function datos(){ 
+var valor=prompt("Valor:","");
+var tasa=prompt("Tasa:","");
+var periodo=prompt("Periodo:","");
+
+<!-- creamos una instancia de la "clase" Economica y le pasamos los parámetros -->
+obj1=new Economica(parseFloat(valor),parseFloat(tasa),parseInt(periodo));
+
+<!-- invocamos al método "desplegarResultado" para ver el resultado -->
+obj1.desplegarResultado();
+}
+
+</script>
+</head>
+<body>
+<h1>Programación Orientada a Objetos con Javascript</h1>
+
+<button onclick="javascript:datos()">Ver ejemplo</button>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/programacion-orientada-a-objetos-con-javascript-un-sencillo-ejemplo/">http://lineadecodigo.com/javascript/programacion-orientada-a-objetos-con-javascript-un-sencillo-ejemplo/</a><br/>
+<strong>Ariel Carraro</strong> en <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>
+

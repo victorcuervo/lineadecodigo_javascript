@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inyectar HTML</title>
+</head>
+<body>
+<h1>Inyectar HTML</h1>
+
+<ul id="lista">
+<li>Elemento</li>
+</ul>
+
+<button id="add">insertAdjacentHTML</button>
+<button id="add2">innerHTML</button>
+
+<script>
+var lista;
+var boton = document.getElementById("add");
+boton.addEventListener("click",function(){	
+	lista = document.getElementById("lista");
+	lista.insertAdjacentHTML("beforeend","<li>Elemento</li>");
+},false);
+
+var boton2 = document.getElementById("add2");
+boton2.addEventListener("click",function(){	
+	lista = document.getElementById("lista");
+	lista.innerHTML += "<li>Elemento</li>";
+},false);
+
+</script>
+
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/insertar-codigo-html-en-una-pagina-web-insertadjacenthtml/">http://lineadecodigo.com/javascript/insertar-codigo-html-en-una-pagina-web-insertadjacenthtml/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

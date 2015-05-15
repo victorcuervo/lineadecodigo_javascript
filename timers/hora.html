@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hora en JavaScript</title>
+<script type="text/javascript">
+function mostrar() 
+   { 
+     var  dia = new Date(); 
+     var  hora = dia.getHours(); 
+     var  minutos = dia.getMinutes(); 
+     var  segundos = dia.getSeconds();
+
+     if ((hora >= 0)&&(hora <= 9)){ 
+      hora="0"+hora; 
+     }
+
+     if ((minutos >= 0)&&(minutos <= 9)){ 
+      minutos="0"+minutos; 
+     }
+
+     if ((segundos >= 0)&&(segundos <= 9)){ 
+      segundos="0"+segundos; 
+     }
+
+	document.getElementById("hora").value =  " "  + hora + ":" + minutos + ":" + segundos; 
+    
+     window.setTimeout("mostrar()",1000); 
+   }
+</script>
+</head>
+<body onLoad="window.setTimeout('mostrar()',1000);">
+
+<h1>Hora en JavaScript</h1>
+
+
+<form id="formulario"> 
+<label for="hora">En estos momentos son las...</label> 
+<input type='text' id='hora' size=10/> 
+</form>
+
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/reloj-en-javascript/">http://lineadecodigo.com/javascript/reloj-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

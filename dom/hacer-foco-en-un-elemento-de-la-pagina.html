@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Hacer foco en un elemento de la página</title>
+<script type="text/javascript">
+function foco(idElemento){
+ document.getElementById(idElemento).focus();
+}
+</script>
+</head>
+<body>
+
+<h1>Hacer foco en un elemento de la página</h1>
+
+
+<form method="POST" action="">
+Nombre: <input type="text" id="nombre"><br>
+Apellido1: <input type="text" id="apellido1"><br>
+Apellido2: <input type="text" id="apellido2"><br>
+Direccion: <input type="text" id="direccion"><br>
+</form>
+
+<a href="#" id="enlace">Enlace que no enlaza con nada</a>
+
+<br><br><br>
+<form action="">
+<input type="button" value="Foco sobre formulario(nombre)" onClick="foco('nombre');">
+<input type="button" value="Foco sobre formulario(apellido2)" onClick="foco('apellido2');">
+<input type="button" value="Foco sobre el enlace" onClick="foco('enlace');">
+</form>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/06/13/hacer-foco-en-un-campo-de-la-pagina-usando-javascript/">http://lineadecodigo.com/2007/06/13/hacer-foco-en-un-campo-de-la-pagina-usando-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

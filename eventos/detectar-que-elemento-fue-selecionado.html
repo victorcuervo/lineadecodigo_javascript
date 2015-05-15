@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Detectar que elemento fue selecionado</title>
+
+<script type="text/javascript">
+function elemento(e){
+
+//  if (!e) var e = window.event;
+  
+  if (e.srcElement)
+	  tag = e.srcElement.tagName;
+  else if (e.target)
+  	  tag = e.target.tagName;
+  
+  alert("El elemento selecionado ha sido " + tag);
+
+}
+</script>
+
+</head>
+<body onmousedown="elemento(event);">
+<h1>Detectar que elemento fue selecionado</h1>
+
+<p>Pincha en alguna parte de la página y verás que elemento HTML es el que lo forma</p>
+
+<img src="http://lineadecodigo.com/wp-content/uploads/2006/12/firefox.jpg" alt="FireFox"><br>
+
+<h2>Una cabecera de nivel 2</h2>
+
+<ul>
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+</ul>
+
+<p>Esto es un parrafo. No es que sea un parrafo muy largo, pero no deja de ser un parrafo, ya que se encuentra dentro de la etiqueta P del lenguaje HTML</p>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/08/02/que-elemento-fue-pulsado/">http://lineadecodigo.com/2007/08/02/que-elemento-fue-pulsado/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

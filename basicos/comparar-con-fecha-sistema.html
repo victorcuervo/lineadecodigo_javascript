@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Comparar con fecha del sistema</title>
+</head>
+<body>
+<h1>Comparar con fecha del sistema</h1>
+
+<form>
+<label for="dia"><input type="text" id="dia" size="2" value="01"></label>/
+<label for="mes"><input type="text" id="mes" size="2" value="02"></label>/
+<label for="annio"><input type="text" id="annio" size="4" value="2012"></label><br/>
+<button id="calcular">Comparar con fecha del Sistema</button>
+</form><br/>
+<span id="fecha"></span>
+
+<script>
+
+var boton = document.getElementById("calcular");
+boton.addEventListener("click",function(ev){
+		
+	dia = document.getElementById("dia").value;
+	mes = document.getElementById("mes").value;
+	annio = document.getElementById("annio").value;
+	
+	fecha_texto = annio+"-"+mes+"-"+dia;
+	
+	fecha = new Date();
+	
+	ms = Date.parse(fecha_texto);
+	fecha2 = new Date(ms);
+	
+	one_day=1000*60*60*24;
+	diferencia = Math.ceil((fecha.getTime()-fecha2.getTime())/(one_day));
+	texto = (diferencia>0)?"Hace " + diferencia:"Dentro de " + (diferencia*-1);
+	
+	document.getElementById("fecha").innerHTML = texto + " dias.";
+	ev.preventDefault();
+	
+},false);
+
+</script>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/comparar-con-la-fecha-del-sistema-en-javascript/">http://lineadecodigo.com/javascript/comparar-con-la-fecha-del-sistema-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

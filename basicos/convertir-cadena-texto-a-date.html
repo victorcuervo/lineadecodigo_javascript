@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Convertir una cadena de texto a un objeto Date</title>
+</head>
+<body>
+
+<h1>Convertir una cadena de texto a un objeto Date</h1>
+
+
+<form>
+<label for="dia"><input type="text" id="dia" size="2" value="01"></label>/
+<label for="mes"><input type="text" id="mes" size="2" value="02"></label>/
+<label for="annio"><input type="text" id="annio" size="4" value="2012"></label><br/>
+<button id="calcular">Calcular Fecha</button>
+</form><br/>
+<span id="fecha"></span>
+
+<script>
+
+var boton = document.getElementById("calcular");
+boton.addEventListener("click",function(ev){
+		
+	dia = document.getElementById("dia").value;
+	mes = document.getElementById("mes").value;
+	annio = document.getElementById("annio").value;
+	
+	fecha_texto = annio+"-"+mes+"-"+dia;
+	
+	ms = Date.parse(fecha_texto);
+	fecha = new Date(ms);
+	
+	document.getElementById("fecha").innerHTML = fecha;
+	ev.preventDefault();
+	
+},false);
+
+</script>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/convertir-una-cadena-a-fecha-en-javascript/">http://lineadecodigo.com/javascript/convertir-una-cadena-a-fecha-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

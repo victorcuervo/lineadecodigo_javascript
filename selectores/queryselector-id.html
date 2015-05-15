@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Acceder a un ID con API QuerySelector</title>
+</head>
+<body>
+<h1>Acceder a un ID con QuerySelector</h1>
+
+
+<div id="mensaje">Esto es un mensaje</div>
+
+
+<script>
+
+	// Validamos si el API QuerySelector está soportado
+	if (document.querySelector) {
+		document.write ("API Query Selector soportado");
+		
+		var mensaje = document.querySelector("#mensaje");
+		console.log(mensaje);
+		console.log("El contenido de los elementos de la clase mensaje '" + mensaje.innerHTML + "'");
+		
+	}
+	else
+		document.write ("API Query Selector NO soportado");
+	
+</script>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/obtener-id-con-api-queryselector/">http://lineadecodigo.com/html5/obtener-id-con-api-queryselector/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

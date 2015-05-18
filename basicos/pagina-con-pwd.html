@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Página con Password</title>
+
+<script>
+  function validarPassword(){
+    texto = prompt("Para ver la página introduzca su contraseña");
+    while(texto!="lineadecodigo"){
+      alert("Password incorrecta");
+      texto = prompt("Para ver la página introduzca su contraseña");
+    }
+    alert("Password Correcta");
+  }
+</script>
+
+
+</head>
+<body>
+
+<h1>Página con Password</h1>
+
+<script>validarPassword();</script>
+Contenido secreto
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/protegiendo-la-pagina-en-javascript/">"http://lineadecodigo.com/javascript/protegiendo-la-pagina-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

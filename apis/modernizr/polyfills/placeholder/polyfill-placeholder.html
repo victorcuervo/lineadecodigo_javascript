@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PlaceHolder Modernizr Polyfill</title>
+<script src="http://lineadecodigo.com/js/modernizr/modernizr.js"></script>
+<script>
+Modernizr.load({
+	test:Modernizr.input.placeholder,
+	nope:['http://lineadecodigo.com/js/jquery/jquery.js','http://lineadecodigo.com/js/jquery/plugins/jquery.placeholder.min.js','http://lineadecodigo.com/js/jquery/plugins/placeholder.js']
+});
+</script>
+</head>
+<body>
+
+<h1>PlaceHolder Modernizr Polyfill</h1>
+
+<form id="formualario">
+<label for="texto">Nombre: </label><input type="text" id="texto" placeholder="Inserte su nombre" size="40" />
+</form>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/como-utilizar-un-polyfill-con-modernizr/">http://lineadecodigo.com/javascript/como-utilizar-un-polyfill-con-modernizr/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

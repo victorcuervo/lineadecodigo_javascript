@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cargar Modernizer</title>
+<script type="text/javascript" src="http://lineadecodigo.com/js/modernizr/modernizr.js"></script>
+</head>
+<body>
+<h1>Cargar Modernizer</h1>
+
+<script type="text/javascript">
+document.write("Su navegador es " + navigator.userAgent + "<br/>");
+if (Modernizr.canvas)
+	document.write("SI se soporta el canvas<br/>");
+else
+	document.write("NO se soporta el canvas<br/>");
+	
+var video = (Modernizr.video)?true:false;
+if (video) document.write("SI se soporta el elemento vídeo<br/>"); else document.write("NO se soporta el elemento vídeo<br/>"); 
+	
+var cssanimations = (Modernizr.cssanimations)?true:false;
+if (cssanimations) document.write("SI se soporta las animaciones CSS3<br/>"); else document.write("NO se soporta animaciones CSS3<br/>");
+	
+</script>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/modernizr-y-las-capacidades-html5-y-css3/">http://lineadecodigo.com/javascript/modernizr-y-las-capacidades-html5-y-css3/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

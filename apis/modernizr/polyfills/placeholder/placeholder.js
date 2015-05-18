@@ -1,0 +1,5 @@
+/**
+ * 
+ */
+
+$("input, textarea").placeholder();

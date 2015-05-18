@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Validar que es numérico</title>
+
+<script>
+function validarSiNumero(numero){
+    if (!/^([0-9])*$/.test(numero))
+      alert("El valor " + numero + " no es un número");
+  }
+</script>
+
+
+</head>
+<body>
+<h1>Validar que es numérico</h1>
+
+<form id="formularioCantidad">
+  <label for="cantidad">Cantidad: </label><input type="text" size=10 id="cantidad" onChange="validarSiNumero(this.value);">
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/validar-que-el-texto-introducido-es-un-numero/">http://lineadecodigo.com/javascript/validar-que-el-texto-introducido-es-un-numero/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

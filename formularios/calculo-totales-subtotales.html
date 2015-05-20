@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Compra de frutas</title>
+<script>
+
+function calculo(cantidad,precio,inputtext,totaltext){
+	
+	/* Parametros:
+	cantidad - entero con la cantidad
+	precio - entero con el precio
+	inputtotal - nombre del elemento del formulario donde ira el total
+	*/
+	
+	// Calculo del subtotal
+	subtotal = precio*cantidad;
+	inputtext.value=subtotal;
+	
+	//Actualizar el total
+	// Utilizamos el eval. Ya que el valor es un texto y si lo tratamos como tal
+	// es como si estuviesemos manipulando una cadena.
+	total = eval(totaltext.value);
+	totaltext.value = total + subtotal;
+}
+</script>
+<body>
+
+<h1>Compra de Frutas</h1>
+
+<form>
+
+<table>
+<tr>
+<td></td>
+<td>Cantidad</td>
+<td>Precio/Ud</td>
+<td>Total</td>
+</tr>
+<tr>
+<td>Platanos</td>
+<td><input type="text" size="3" id="platanos" value="0" onChange="calculo(this.value,precioplatanos.value,totalplatanos,total);">uds</td>
+<td><input type="hidden" id="precioplatanos" value="7"/> 7€</td>
+<td><input type="text" size="8" id="totalplatanos" value="0">€</td>
+</tr>
+<tr>
+<td>Manzanas</td>
+<td><input type="text" size="3" id="manzanas" value="0" onChange="calculo(this.value,preciomanzanas.value,totalmanzanas,total);">uds</td>
+<td><input type="hidden" id="preciomanzanas" value="3"/>3€</td>
+<td><input type="text" size="8" id="totalmanzanas" value="0">€</td>
+</tr>
+<tr>
+<td>Peras</td>
+<td><input type="text" size="3" id="peras" value="0" onChange="calculo(this.value,precioperas.value,totalperas,total);">uds</td>
+<td><input type="hidden" id="precioperas" value="2"/>2€</td>
+<td><input type="text" size="8" id="totalperas" value="0">€</td>
+</tr>
+<tr>
+<td>Uvas</td>
+<td><input type="text" size="3" id="uvas" value="0" onChange="calculo(this.value,preciouvas.value,totaluvas,total);">uds</td>
+<td><input type="hidden" id="preciouvas" value="9"/>9€</td>
+<td><input type="text" size="8" id="totaluvas" value="0">€</td>
+</tr>
+<tr>
+<td>Melocotones</td>
+<td><input type="text" size="3" id="melocotones" value="0" onChange="calculo(this.value,preciomelocotones.value,totalmelocotones,total);">uds</td>
+<td><input type="hidden" id="preciomelocotones" value="5"/>5€</td>
+<td><input type="text" size="8" id="totalmelocotones" value="0">€</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td><td></td>
+<td><input type="text" id="total" size="8" value="0">€</td>
+</tr>
+
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/calculo-de-totales-y-subtotales-en-javascript/">http://lineadecodigo.com/javascript/calculo-de-totales-y-subtotales-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+ 
+</body>
+</html>

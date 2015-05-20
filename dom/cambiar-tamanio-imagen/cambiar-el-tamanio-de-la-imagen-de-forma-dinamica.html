@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Cambiar el tamaño de la imagen de forma dinamica</title>
+<script type="text/javascript">
+function cambiaTamanio(){
+if (document.images) {
+  document.images.logo.width=100;
+  document.images.logo.height=100;
+} else {
+  logo = document.getElementById("logo");
+  logo.width = 100;
+  logo.height = 100; 
+}
+}
+</script>
+</head>
+<body>
+
+
+<input type="button" onClick="cambiaTamanio()" value="Cambiar tamaño"/>
+<br/>
+<img src="firefox.jpg" id="logo" title="FireFox"/>
+
+
+
+</body>
+</html>

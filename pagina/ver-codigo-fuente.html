@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Codigo Fuente</title>
+
+<script> 
+
+function verCodigoFuente (sURL) {
+ if (sURL == "") {
+   alert("Introduzca alguna URL");
+   return false;
+ } 
+      
+ if (!/^http:\/\//.test(sURL)) {
+   alert("La URL tiene que empezar con el protocolo http://");
+   return false;
+ }
+
+ window.location.href="view-source:" + sURL;
+ return true;
+   
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<form>
+URL: <input type="text" name="url" size="50" value="http://"><br>
+<input type="button" onClick="verCodigoFuente(this.form.url.value);"
+   value="Ver código fuente">
+</form>
+
+</body>
+</html>

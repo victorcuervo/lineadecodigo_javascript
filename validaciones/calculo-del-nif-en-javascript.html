@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Calcular NIF</title>
+
+<SCRIPT>
+ <!--
+ function calcularNIF(dni) {
+  if (!/^\d{8}$/.test(dni)) {
+   alert ("El numero introducido no es valido");
+   return false;
+  }
+ 
+  var letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
+  var numero = dni%23;
+  form1.letra.value = letras.substring(numero,numero+1);
+  return true;
+ }
+ //-->
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><font face="Arial, Helvetica, sans-serif" size="3">
+<b>Calculo del NIF</b></font></p>
+<form name="form1" method="post" action="">
+<font face="Arial, Helvetica, sans-serif" size="2">NIF:</font> 
+<input type="text" name="numero" maxlength="8" size="8"
+ onBlur="calcularNIF(this.value);">  - 
+<input type="text" name="letra" maxlength="1" size="1">
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/calculo-del-nif-en-javascript/">http://lineadecodigo.com/javascript/calculo-del-nif-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+   
+</body>
+</html>

@@ -1,0 +1,12 @@
+_bd={
+  "paises":{
+    "IdPais":"numeric",
+    "Pais":"string",
+  }
+};
+_bd_ind={
+   'paises':[false,false]
+};
+_bd_pag={
+   'paises':0
+};

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Cambiar el tamaño de la imagen de forma dinamica</title>
+<script type="text/javascript">
+function cambiaTamanio(){
+if (document.images) {
+  document.images.logo.width=100;
+  document.images.logo.height=100;
+} else {
+  logo = document.getElementById("logo");
+  logo.width = 100;
+  logo.height = 100; 
+}
+}
+</script>
+</head>
+<body>
+
+
+<input type="button" onClick="cambiaTamanio()" value="Cambiar tamaño"/>
+<br/>
+<img src="firefox.jpg" id="logo" title="FireFox"/>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/cambiar-el-tamano-de-la-imagen-de-forma-dinamica/">http://lineadecodigo.com/javascript/cambiar-el-tamano-de-la-imagen-de-forma-dinamica/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+
+</body>
+</html>

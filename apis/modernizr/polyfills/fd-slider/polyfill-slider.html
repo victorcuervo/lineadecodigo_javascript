@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Polyfill Slider</title>
+<script src="http://lineadecodigo.com/js/modernizr/modernizr.js"></script>
+<script>
+Modernizr.load({
+	test:Modernizr.inputtypes.range,
+	nope:['http://lineadecodigo.com/js/jquery/plugins/fd-slider.js','http://lineadecodigo.com/js/jquery/plugins/fd-slider.css'],
+	complete:function(){if(fdSlider)fdSlider.onDomReady();}
+});
+</script>
+
+</head>
+<body>
+
+<h1>Polyfill Slider</h1>
+
+<input type="range" min="0" max="10" value="3" step="1" id="mislider">
+<span id="valor"></span>
+
+<script>
+var barra = document.getElementById("mislider");
+barra.addEventListener("change",function(ev){	
+	var resultado = document.getElementById("valor");
+	resultado.innerHTML = ev.currentTarget.value;	
+},true);
+
+document.getElementById("valor").innerHTML = document.getElementById("mislider").value;
+
+</script>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/crear-un-slider-con-jquery/">http://lineadecodigo.com/jquery/crear-un-slider-con-jquery/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

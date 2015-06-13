@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Multiplicar Números</title>
+<script>
+function multiplicar(){
+	m1 = document.getElementById("multiplicando").value;
+	m2 = document.getElementById("multiplicador").value;
+	r = m1*m2;
+	document.getElementById("resultado").value = r;
+	}
+</script>
+</head>
+<body>
+
+<h1>Multiplicar Números</h1>
+
+<form id="multiplicar">
+  <input type="text" id="multiplicando" value=0 onChange="multiplicar();"> X
+  <input type="text" id="multiplicador" value=0 onChange="multiplicar();"> =
+  <input type="text" id="resultado">
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/formulario-que-multiplica-numeros-en-javascript/">http://lineadecodigo.com/javascript/formulario-que-multiplica-numeros-en-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

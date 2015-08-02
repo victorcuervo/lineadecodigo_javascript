@@ -1,8 +1,12 @@
 /**
- * 
- * Fichero con formulas matemáticas
- * 
+ * @file formulas.js
+ * @version 1.1
+ * @author Linea de Codigo (http://lineadecodigo.com)
+ * @date   02/agosto/2015
+ * @url   http://lineadecodigo.com/tag/javascript-math/
+ * @description  Fichero con diferentes formulas matemáticas para Javascript
  */
+
 
 function formulas() {
 

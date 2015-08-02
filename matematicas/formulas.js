@@ -11,6 +11,11 @@ function formulas() {
 		return Math.PI * Math.pow(radio,2);
 	}
 	
+	/* Área Triángulo */
+	this.areaTriangulo(base,altura) {
+		return (base*altura)/2;
+	}
+	
 	/* Número Aleatorio */
 	this.aleatorio = function (maximo) {
 		return parseInt(Math.random()*maximo+1);
@@ -36,6 +41,7 @@ function formulas() {
 var f = new formulas();
 console.log ("El área de un círculo de radio 2 es " + f.areaCirculo(2));
 
+console.log("Generar 10 números aleatorios");
 for (x=0;x<10;x++) {
 	// Números aleatorios entre 1 y 10
 	console.log (f.aleatorio(10));

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SetTimeout y Función con parámetros</title>
+</head>
+<body>
+
+<h1>SetTimeout y Función con parámetros</h1>
+Abre la consola Javascript.
+
+<script>
+
+function escribir(valor) {
+
+	valor++;
+	console.log(valor);
+	
+	// Con función anónima	
+	if (valor < 10) {
+		window.setTimeout(function() {
+			escribir(valor);
+		},1000);
+	}
+	
+}
+
+
+function escribir2(valor) {
+
+	valor++;
+	console.log(valor);
+	
+	// Como parámetro
+	if (valor < 10) {
+		window.setTimeout(escribir,1000,valor);
+	}
+
+	
+}
+
+escribir(0);
+escribir2(0);
+
+</script>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/settimeout-con-parametros/">http://lineadecodigo.com/javascript/settimeout-con-parametros/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

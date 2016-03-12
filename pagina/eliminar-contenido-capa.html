@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eliminar Contenido Capa</title>
+</head>
+<body>
+<h1>Eliminar Contenido Capa</h1>
+
+<div id="micapa">Contenido de mi capa...
+<br/>
+<img src="http://lineadecodigo.com/wp-content/uploads/2015/07/Logo2-768x768.png"/>
+<br/>
+Fin del contenido de mi capa
+</div>
+
+<button id="eliminar">Eliminar Contendio</button>
+
+
+
+<script>
+
+var boton = document.getElementById("eliminar");
+boton.addEventListener("click", function() {
+	
+	document.getElementById("micapa").innerHTML = '';
+	
+},false);
+
+
+</script>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/borrar-contenido-capa-javascript/">http://lineadecodigo.com/javascript/borrar-contenido-capa-javascript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

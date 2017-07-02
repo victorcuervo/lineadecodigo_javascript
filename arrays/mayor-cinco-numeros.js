@@ -4,7 +4,7 @@
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   2/julio/2017
  * @url  http://lineadecodigo.com/javascript/mayor-cinco-numeros-javascript/  
- * @description Calcular el mayor de 5 números
+ * @description Calcular el mayor de 5 números con Javascript
  */
 
 numeros = [5,2,9,4,8];

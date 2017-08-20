@@ -4,7 +4,7 @@
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   20/agosto/2017
  * @url  http://lineadecodigo.com/javascript/anadir-elementos-a-un-array-con-javascript-push/
- * @description Realizar una desectructuración de un array
+ * @description Manejar un método .push en Javascript
 */
 
 console.log("Antes del Push");

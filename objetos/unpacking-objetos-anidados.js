@@ -41,6 +41,3 @@ console.log(nombre);
 
 var {libros: [{titulo}]} = autor;
 console.log(titulo);
-
-for (var {titulo} of autor.libros)
- console.log(titulo);

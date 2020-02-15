@@ -1,7 +1,7 @@
 /**
  * @file formulas.js
  * @version 1.1
- * @author Linea de Codigo (http://lineadecodigo.com)
+ * @author Víctor Cuervo (http://lineadecodigo.com)
  * @date   02/agosto/2015
  * @url   http://lineadecodigo.com/tag/javascript-math/
  * @description  Fichero con diferentes formulas matemáticas para Javascript
@@ -16,7 +16,7 @@ function formulas() {
 	}
 	
 	/* Área Triángulo */
-	this.areaTriangulo(base,altura) {
+	this.areaTriangulo = function (base,altura) {
 		return (base*altura)/2;
 	}
 	

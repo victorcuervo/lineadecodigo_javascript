@@ -3,3 +3,9 @@ En este repositorio puedes encontrar los ejemplos de los artículos explicados e
 
 [1]: http://lineadecodigo.com "Aprende a Programar"
 [2]: http://lineadecodigo.com/categoria/javascript
+
+
+~~~sh
+docker build -t my-nodejs-app .
+docker run -it my-nodejs-app node /home/lineadecodigo/fechas/fechaayer.js
+~~

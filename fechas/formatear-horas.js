@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   15/febrero/2020
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/formato-de-horas-en-javascript/
  * @description Utilización del método .toLocaleTimeString para dar formato a una hora dependiendo de la localización.
 */
 

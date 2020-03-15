@@ -3,11 +3,11 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   15/febrero/2020
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/numeros-en-javascript-segun-locale/
  * @description Formatear un número para que aparezca en su localización
 */
 
-const numero = 123.48;
+const numero = 11223.48;
 
 // Español
 console.log(numero.toLocaleString("es-ES"));

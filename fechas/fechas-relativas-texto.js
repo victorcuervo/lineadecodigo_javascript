@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   09/febrero/2020
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/fechas-relativas-en-javascript/
  * @description Utilizar formatos relativos para poner en texto fechas.s
 */
 

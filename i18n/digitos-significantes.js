@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   23/septiembre/2020
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/digitos-significativos-en-javascript/
  * @description Formatear números para dejar solo los dígito significantes.
 */
 

@@ -3,8 +3,8 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   23/septiembre/2020
- * @url  http://lineadecodigo.com/javascript/pdte/
- * @description Ejemplo que nos explica cómo dar formato a las monedas
+ * @url  http://lineadecodigo.com/javascript/formatear-divisas-en-javascript/
+ * @description Ejemplo que nos explica cómo dar formato a las divisas
 */
 
 

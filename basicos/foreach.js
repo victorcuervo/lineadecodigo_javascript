@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   30/enero/2021
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/bucle-foreach-en-javascript/
  * @description Realizar un bucle foreach para recorrer una lista de elementos
 */
 

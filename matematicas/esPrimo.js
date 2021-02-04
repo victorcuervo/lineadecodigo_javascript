@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo (http://lineadecodigo.com)
  * @date   31/enero/2021
- * @url   http://lineadecodigo.com/javascript/pdte/
+ * @url   http://lineadecodigo.com/javascript/numeros-primos-del-1-al-100-en-javascript/
  * @description  Cálculo de los números primos del 1 al 100
  */
 

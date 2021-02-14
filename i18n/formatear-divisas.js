@@ -1,5 +1,5 @@
 /**
- * @file formatear-monedas.js
+ * @file formatear-divisas.js
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   23/septiembre/2020

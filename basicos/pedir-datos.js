@@ -1,5 +1,5 @@
 /**
- * @file pedir-dayos.js
+ * @file pedir-datos.js
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   27/agosto/2017

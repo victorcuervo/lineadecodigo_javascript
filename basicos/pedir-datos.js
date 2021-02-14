@@ -2,7 +2,7 @@
  * @file pedir-datos.js
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
- * @date   27/agosto/2017
+ * @date   13/febrero/2021
  * @url  http://lineadecodigo.com/javascript/pdte/
  * @description Pedir un dato mediante un prompt
 */

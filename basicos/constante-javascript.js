@@ -4,7 +4,7 @@
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   14/febrero/2021
  * @url  http://lineadecodigo.com/javascript/pdte/
- * @description Pedir un dato mediante un prompt
+ * @description Constantes en Javascript
 */
 
 const constante = 12;

@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   7/febrero/2021
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/multiplicar-matrices-en-javascript/
  * @description Código que nos multiplica matrices en Javascript
 */
 

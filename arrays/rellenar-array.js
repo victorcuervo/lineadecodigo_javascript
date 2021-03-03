@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   13/febrero/2021
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/rellenar-un-array-con-numeros/
  * @description Rellena los elementos de un array con un valor mediante un método fill.
 */
 

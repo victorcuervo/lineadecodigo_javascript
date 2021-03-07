@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   13/febrero/2021
- * @url  http://lineadecodigo.com/javascript/pedir-datos-con-prompt/
+ * @url  http://lineadecodigo.com/javascript/pedir-datos-con-prompt-en-javascript/
  * @description Pedir un dato mediante un prompt
 */
 

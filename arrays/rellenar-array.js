@@ -12,5 +12,5 @@ let miarray = new Array(10);
 miarray.fill(2,0,10);
 
 miarray.forEach(function(item,index,arr){
-    console.log(item);
+    console.log("Posición " + index + ": " + item);
 });

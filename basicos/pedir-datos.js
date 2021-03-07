@@ -7,7 +7,9 @@
  * @description Pedir un dato mediante un prompt
 */
 
-let valor1 = prompt("Dame el valor 1");
-let valor2 = prompt("Dame el valor 2");
+let valor1 = prompt("Dame el valor 1",0);
+let valor2 = prompt("Dame el valor 2",0);
 
-console.log("La suma de " + valor1 + "+" + valor2 + " es " + valor1+valor2);
+let suma = parseInt(valor1) + parseInt(valor2); 
+
+console.log("La suma de " + valor1 + "+" + valor2 + " es " + suma);

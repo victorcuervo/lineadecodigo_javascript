@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   14/febrero/2021
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  https://lineadecodigo.com/javascript/variables-locales-en-javascript/
  * @description Variables locales en Javascript
 */
 

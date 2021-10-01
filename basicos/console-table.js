@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   14/febrero/2021
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/mostrar-tablas-por-consola-en-javascript/
  * @description Muestra la salida en consola como si fuese una tabla
 */
 

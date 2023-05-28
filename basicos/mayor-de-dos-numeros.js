@@ -19,4 +19,3 @@ if (n1>n2) {
     console.log("Los dos números osn iguales");
 }
 
-console.log(Math.max(5,2,4,7,14));

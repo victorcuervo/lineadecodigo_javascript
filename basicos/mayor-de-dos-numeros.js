@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   28/mayo/2023
- * @url  http://lineadecodigo.com/javascript/pdte/
+ * @url  http://lineadecodigo.com/javascript/mayor-de-dos-numeros-en-javascript/
  * @description Saber cual de los dos números es mayor.
 */
 

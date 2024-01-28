@@ -3,7 +3,7 @@
  * @version 1.0
  * @author Víctor Cuervo - http://lineadecodigo.com
  * @date   25/enero/2024
- * @url  http://lineadecodigo.com/javascript/xxx/
+ * @url  http://lineadecodigo.com/javascript/crear-promesa-en-javascript/
  * @description Crear una promesa en Javascript.
 */
 
@@ -18,9 +18,4 @@ let promesa = new Promise((resolve, reject) => {
     }
 });
 
-
-
 promesa.then(resolve => resolve.mensaje, reject => `${reject.mensaje}. Salió ${reject.numero}`).then((value)=>console.log(value));
-
-
-

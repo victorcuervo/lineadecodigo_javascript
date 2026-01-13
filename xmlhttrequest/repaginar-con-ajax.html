@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Repaginar con AJAX</title>
+<script type="text/javascript">
+
+var req;
+
+function paginar(pagina) {
+ 
+ req = false;
+ 
+ // Llama objeto XMLHttpRequest
+ if (window.XMLHttpRequest) {
+   req = new XMLHttpRequest();    
+ }
+
+ // Si no funciona intenta utiliar el objeto IE/Windows ActiveX 
+ } elseif (window.ActiveXObject) {
+   req = new ActiveXObject("Microsoft.XMLHTTP"); 
+ }
+ 
+ if(req!=null){
+   req.onreadystatechange = procesarRespuesta;
+   url = 'datos.jsp?pagina=' + pagina;   
+   req.open("GET",url,true);
+   req.send(null);
+ } 
+ 
+
+
+function procesarRespuesta(){
+
+        contenido = document.getElementById('datos');
+        contenido.innerHTML="Cargando los datos...";
+
+        if (req.readyState==4 && req.status==200) {             
+                //mostrar resultados en esta capa
+                contenido.innerHTML = req.responseText;
+  }
+
+}
+
+
+</script>
+</head>
+<body>
+
+<h1>Repaginar con AJAX</h1>
+
+
+
+<div id="datos"></div>
+<a href="#" onclick="paginar(1);" title="paginar">1</a> | 
+<a href="#" onclick="paginar(2);" title="paginar">2</a> | 
+<a href="#" onclick="paginar(3);" title="paginar">3</a> | 
+<a href="#" onclick="paginar(4);" title="paginar">4</a> |
+<a href="#" onclick="paginar(5);" title="paginar">5</a>
+
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/ajax/repaginar-datos-con-ajax/">http://lineadecodigo.com/ajax/repaginar-datos-con-ajax/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>
